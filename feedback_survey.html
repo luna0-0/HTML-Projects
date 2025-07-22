@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Customer Feedback Survey</h1>
+    <hr>
+    <p>Pleasetake a moment to complete the survey below.</p>
+    <form>
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Your Age: </label>
+        <input type="number" id="age" name="age" value="10"><br>
+        <label for="fav_color">Favorite Color: </label>
+        <select id="fav_color" name="color">
+            <option>Blue</option>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Black</option>
+            <option>Pink</option>
+            <option>White</option>
+        </select><br>
+        <label for="feedback">Your Feedback: </label><br>
+        <textarea id="feedback" rows="5" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Instructions:</h3>
+    <ul type="disc">
+        <li>Fill in your name and age in the first two fields.</li>
+        <li>Select your favorite color from the dropdown list.</li>
+        <li>Provide your feedback in the text box below.</li>
+        <li>Click the "Submit" button to submit your responses.</li>
+    </ul>
+    <hr>
+    <h2>Survey Responses</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favourite Color</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>Blue</td>
+                <td>Greate service! Keep it up.</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Green</td>
+                <td>Would love to see more options.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
