@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <main>
+      <h1>Book Survey</h1>
+      <form action="#">
+        <div>
+          <label for="name">Your Name: </label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <br />
+        <div>
+          <label for="age">Your Age: </label>
+          <br />
+          <input type="number" id="age" name="age" required />
+        </div>
+        <br />
+        <div>
+          <label for="email">Your Email: </label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <p>Your Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" value="female" name="gender" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <br />
+        <div>
+          <label for="product">Favourite Book: </label><br />
+          <input type="text" id="product" name="product-name" required />
+        </div>
+        <br />
+        <div>
+          <label for="delivery">Preferred Delivery: </label><br />
+          <select id="delivery" name="delivery" required>
+            <option value="" disabled selected hidden>Select</option>
+            <option value="e-delivery">E-delivery</option>
+            <option value="home-delivery">Home Delivery</option>
+            <option value="pickup">Pickup</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <p>Which genre do you like the most?</p>
+
+          <input
+            type="radio"
+            name="genre"
+            value="fiction"
+            id="fiction"
+            required
+          />
+          <label for="fiction">Fiction</label><br />
+
+          <input type="radio" name="genre" value="mystery" id="mystery" />
+          <label for="mystery">Mystery</label><br />
+
+          <input type="radio" name="genre" value="romance" id="romance" />
+          <label for="romance">Romance</label><br />
+
+          <input type="radio" name="genre" value="fantasy" id="fantasy" />
+          <label for="fantasy">Fantasy</label><br />
+
+          <input type="radio" name="genre" value="sci-fi" id="sci-fi" />
+          <label for="sci-fi">Sci-Fi</label><br />
+        </div>
+        <br />
+        <div>
+          <label for="feedback">Feedback: </label><br />
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            cols="50"
+            maxlength="300"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" id="updates" name="updates" value="update" />
+          <label for="updates"
+            >Send me email updates on new book releases.
+          </label>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
